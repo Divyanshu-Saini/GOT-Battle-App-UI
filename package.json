@@ -1,0 +1,59 @@
+{
+  "name": "got-battle-app-ui",
+  "version": "1.0.0",
+  "description": "Simple react based ui to used got battle api",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack -d --mode development",
+    "build-prod": "webpack -p --mode production",
+    "start": "webpack-dev-server --hot --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Divyanshu-Saini/GOT-Battle-App-UI.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "bable",
+    "webpack"
+  ],
+  "author": "Divynashu Saini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Divyanshu-Saini/GOT-Battle-App-UI/issues"
+  },
+  "homepage": "https://github.com/Divyanshu-Saini/GOT-Battle-App-UI#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@hot-loader/react-dom": "^16.11.0",
+    "@types/react": "^16.9.12",
+    "@types/react-dom": "^16.9.4",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.3.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "lodash-webpack-plugin": "^0.11.5",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "typescript": "^3.7.2",
+    "url-loader": "^2.3.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.18"
+  }
+}
