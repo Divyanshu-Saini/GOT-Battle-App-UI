@@ -6,7 +6,8 @@
   "scripts": {
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production",
-    "start": "webpack-dev-server --hot --mode development"
+    "start": "webpack-dev-server --hot --mode development",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/Divyanshu-Saini/GOT-Battle-App-UI/issues"
   },
-  "homepage": "https://github.com/Divyanshu-Saini/GOT-Battle-App-UI#readme",
+  "homepage": "https://divyanshu-saini.github.io/GOT-Battle-App-UI/",
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
@@ -36,6 +37,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "file-loader": "^4.3.0",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "html-webpack-template": "^6.2.0",
     "lodash-webpack-plugin": "^0.11.5",
