@@ -1,5 +1,5 @@
 import * as React from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 
 import Battle from './battle';
 
@@ -23,16 +23,15 @@ export default class BattleList extends React.Component<IBattleListProps, IBattl
 
     componentDidMount() {
         // fetch list of battles.
-        axios
-            .get('https://prdxn-got-battle-api.herokuapp.com/list')
+        Axios
+            .get('https://got-battle-api-ds.herokuapp.com/list')
             .then(res => {
                 let battleList = res.data.filter((filterData: any) => filterData != '');
                 this.setState({ BattleList: battleList })
-                console.log(this.state.BattleList);
             })
         // fetching Battle count
-        axios
-            .get('https://prdxn-got-battle-api.herokuapp.com/count')
+        Axios
+            .get('https://got-battle-api-ds.herokuapp.com/count')
             .then(res => {
                 this.setState({ TotalBattle: res.data.totalBattle })
             })
@@ -47,8 +46,8 @@ export default class BattleList extends React.Component<IBattleListProps, IBattl
                     <li className="collection-header grey lighten-1">
                         <h5> {`${TotalBattle} Battle Occure in Game Of Throne`}</h5>
                     </li>
-                    {BattleList.map((battleNmae: string) => {
-                        return <Battle BattleName={battleNmae} />
+                    {BattleList.map((battleNmae: string, key: any) => {
+                        return <Battle BattleName={battleNmae} key={key} />
                     })}
                 </ul>
             </div>

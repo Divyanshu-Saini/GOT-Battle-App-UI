@@ -21,10 +21,10 @@ class App extends React.Component<Props> {
                 <Header />
                 <div className="row">
                     <div className="col m6 s12">
-                        <BattleList />
+                        <Search />
                     </div>
                     <div className="col m6 s12">
-                        <Search />
+                        <BattleList />
                     </div>
                 </div>
                 <Footer />
